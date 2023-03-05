@@ -42,7 +42,7 @@ public class FlipkartMobileVerificationStarting {
 			 driver.findElement(By.xpath("//button[text()='Verify']")).click();
 			
 		}  finally {
-			System.out.println("unable to verify the phone number");
+			System.out.println("unable to verify the phone Number");
 		}
 	}
 
