@@ -31,8 +31,10 @@ public class FlipkartMobileVerificationStarting {
 	@Given("enter the verify the phonenumber")
 	public void enter_the_verify_the_phonenumber() throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='IiD88i _351hSN']/input[@type='text']")).sendKeys("7019502569");
+		
 		driver.findElement(By.xpath("//button[text()='Request OTP']")).click();
 		//OTP will genarate we have to enter the manually
+		//the order is unable to place due to verifying the mobile number automatically
 		Thread.sleep(10000);
 		 driver.findElement(By.xpath("//button[text()='Verify']")).click();
 	}
