@@ -35,8 +35,15 @@ public class FlipkartMobileVerificationStarting {
 		driver.findElement(By.xpath("//button[text()='Request OTP']")).click();
 		//OTP will genarate we have to enter the manually
 		//the order is unable to place due to verifying the mobile number automatically
+		 
 		Thread.sleep(10000);
-		 driver.findElement(By.xpath("//button[text()='Verify']")).click();
+		 
+		 try {
+			 driver.findElement(By.xpath("//button[text()='Verify']")).click();
+			
+		}  finally {
+			System.out.println("unable to verify the phone number");
+		}
 	}
 
 	@When("Search on the ipad")
